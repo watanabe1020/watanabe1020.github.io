@@ -1,0 +1,168 @@
+@charset"utf-8";
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a{
+text-decoration: none;
+}
+img{
+max-width: 100%;
+vertical-align: bottom;
+}
+
+h1{
+text-align: center;
+margin: 40px 0;
+}
+
+.column-wrapper{
+width: 90%;
+margin: 0 auto 100px;
+columns: 4;
+gap: 30px;
+}
+.box{
+break-inside: avoid;
+/* 要素の中で改行されないようにする */
+background-color: #e2e2e2;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 40px;
+gap: 30px;
+}
+.photo{
+margin-bottom: 16px;
+
+}
+.photo img{
+border-radius: 10px;
+}
+.txt{
+line-height: 1.6;
+}
+.box:nth-of-type(n+9){
+display: none;
+}
+#more-btn{
+display: none;
+}
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-rounded {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 35px 0;
+  border-radius: 50%;
+  background: #fcfff4;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fcfff4),
+    color-stop(40%, #dfe5d7),
+    to(#b3bead)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #fcfff4 0%,
+    #dfe5d7 40%,
+    #b3bead 100%
+  );
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  -webkit-box-shadow: inset 5px 30px 20px rgba(255, 255, 255, 0.5),
+    0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 5px 30px 20px rgba(255, 255, 255, 0.5),
+    0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+a.btn-rounded i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a.btn-rounded:hover {
+  -webkit-box-shadow: inset 15px 30px 40px rgba(255, 255, 255, 0.55),
+    0 3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 15px 30px 40px rgba(255, 255, 255, 0.55),
+    0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+a.btn-rounded:hover i {
+  bottom: 6px;
+}
+
+.fa-position-bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: calc(50% - 0.5rem);
+}
+
+/* 960px以下の時は3カラム */
+@media(max-width:960px){
+.column-wrapper{
+width: 96%;
+columns: 3;
+gap: 30px;
+}
+.box{
+padding: 10px;
+margin-bottom: 20px;
+}
+}
+/* 640px以下の時は2カラム */
+@media(max-width:640px){
+.column-wrapper{
+columns: 2;
+gap: 16px;
+}
+.box{
+padding: 10px;
+margin-bottom: 16px;
+}
+
+#more-btn{
+display: block;
+
+}
+}

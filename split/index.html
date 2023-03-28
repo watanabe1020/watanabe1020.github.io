@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スプリットレイアウトの作成</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<div class="containes">
+<div class="main-visual">
+<img src="img/01.jpg" alt="">
+</div>
+<main>
+<nav class="g-nav">
+<ul>
+<li><a href="#content-1">content-1</a></li>
+<li><a href="#content-2">content-2</a></li>
+<li><a href="#content-3">content-3</a></li>
+</ul>
+</nav>
+<div class="content-box" id="content-1">
+<h2>content-1</h2>
+<div class="thumb-wrapper">
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt at facere veniam, culpa laborum sed id dolores corporis fugiat ex eveniet magni ipsum dolorem eligendi? Quasi reprehenderit dignissimos quod commodi.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quaerat ratione placeat sequi facere provident deserunt! Voluptatibus, eveniet, natus itaque blanditiis asperiores neque explicabo dolor ad provident repellendus placeat! Omnis?</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus reiciendis non vel accusantium mollitia reprehenderit dolorum eaque quas possimus nesciunt soluta voluptatum eveniet obcaecati, id aut, quam saepe sequi.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi eum necessitatibus corporis eius a doloribus dolores nihil porro ipsam aliquid, asperiores consequatur ab. Unde repellendus veniam facilis aspernatur laboriosam?</p>
+
+</div>
+</div>
+</div>
+</main>
+</div>
+<div class="containes">
+<div class="main-visual">
+<img src="img/02.jpg" alt="">
+</div>
+<main>
+<div class="content-box" id="content-2">
+<h2>content-2</h2>
+<div class="konntennto-img">
+<img src="https://placehold.jp/600x600.png" alt="">
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<img src="https://placehold.jp/600x600.png" alt="">
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+</div>
+</main>
+</div>
+<div class="containes">
+<div class="main-visual">
+<img src="img/03.jpg" alt="">
+</div>
+<main>
+<div class="content-box" id="content-3">
+<h2>content-3</h2>
+<div class="ikdakunn-img"></div>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet.</p>
+<img src="https://placehold.jp/240x240.png" alt="">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+</div>
+</main>
+</div>
+
+<footer>
+<p class="to-top"><a href="#top"><img src="img/top.svg" alt=""></a></p>
+<form>
+<dl class="form-list">
+<dt>お名前</dt>
+<dd><input type="text" placeholder="お名前を入力して下さい"name=></dd>
+<dt>メールアドレス</dt>
+<dd><input type="email" placeholder="メールアドレスを入力して下さい" readonly></dd>
+<dt>性別</dt>
+<dd>
+<label for="male"><input type="radio" nama="gender" id="male">男性</label>
+<label for="female"><input type="radio"  name="gender" id="female">女性</label>
+</dd>
+<dt>生年月日</dt>
+<dd>
+<select>
+<script>
+// １９４５～２０００になるまで1づつ増やす
+for(var i = 1945;i < 2001;i++){
+document.write('<option>'+i+'年</option>');
+}
+</script>
+</select>
+</dd>
+<dt>お問い合わせ内容</dt>
+<dd>
+<textarea placeholder="お問い合わせ内容をご記入ください" ></textarea>
+</dd>
+</dl>
+<input type="submit" value="送信">
+</form>
+</footer>
+</body>
+</html>

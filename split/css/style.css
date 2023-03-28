@@ -1,0 +1,181 @@
+@charset "UTF-8";
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;}
+img {
+vertical-align: bottom;
+max-width: 100%;
+}
+html{
+scroll-behavior: smooth;
+}
+/* スムーススクロールの設定
+ */
+.containes{
+display: flex;
+}
+.main-visual{
+width: 50%;
+height: 100vh;
+position: sticky;
+top:0;
+left:0;
+opacity: 0.4;
+}
+
+.main-visual>img{
+object-fit: cover;
+object-position: center bottom;
+width: 100%;
+height: 100%;
+}
+
+main{
+width: 50%;
+}
+.g-nav{
+width: 50%;
+height: 50px;
+background-color: brown;
+position: fixed;
+/* border-left: 3px solid #000; */
+
+}
+.g-nav>ul{
+display: flex;
+}
+.g-nav li{
+width: 33.33%;
+text-align: center;
+line-height: 50px;
+color: #000;
+border-left: 1px solid rgb(251, 249, 249);
+/* border-right: 1px solid rgb(252, 252, 252); */
+}
+.g-nav a{
+display: block;
+text-align: center;
+line-height: 50px;
+color: #000;}
+
+
+.g-nav li:nth-of-type>a{
+border-left: solid 1px #fff;}
+
+.g-nav a:hover {
+background: #089198;}
+
+.content-box{
+background-color: rgb(20, 135, 236);
+height: 300vh;
+}
+.content-box>h2{
+text-align: center;
+font-size: 40px;
+padding: 100px 0 20px;
+}
+
+.thumb-wrapper{
+width: 240px;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+}
+.konntennto-img{
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.ikdakunn-img{
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+
+
+.to-top{
+width: 40px;
+height: 40px;
+position: absolute;
+right: 50px;
+bottom: 40px;
+}
+
+footer{
+width: 100%;
+height: 600px;
+padding: 100px ;
+background-color: blue;
+position: relative;
+}
+footer>p {
+font-size: 20px;
+text-align: center;
+margin-bottom: 100px; 
+}
+
+
+form{
+width: 50%;
+}
+.form-list{
+display: flex;
+flex-wrap: wrap;
+}
+.form-list>dt{
+width: 30%;
+margin-bottom: 10px;
+}
+.form-list>dd{
+width: 70%;
+margin-bottom: 10px;
+}
+textarea{
+width: 260px;
+height: 120px;
+}
+
+@media (max-width:900px){
+.g-nav{
+width: 100%;}
+
+.container{
+display: block;} 
+
+.main-visual{
+width: 100%;
+height: 50vh;
+position: static;
+}
+main{
+width: 100%;
+}
+.content-img{
+margin: 60px auto 100px;}
+.thumb-wrapper{
+width: 94%;}
+.container:first-of-type{
+padding-top: 50px;
+}
+.content-box{
+font-size: 32px;
+padding: 40px ;
+}
+
+}
+
+}
